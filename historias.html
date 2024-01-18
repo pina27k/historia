@@ -7,14 +7,52 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-
-        h1, h2 {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
             color: #333;
         }
 
+        header {
+            background-color: #000000;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        main {
+            margin: 20px;
+        }
+
+        h1 {
+            color: #adadad;
+            text-align: center;
+        }
+
         .historia {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
             margin-bottom: 30px;
         }
 
@@ -30,7 +68,9 @@
 </head>
 <body>
 
-    <h1>Histórias Escolares</h1>
+    <header>
+        <h1>Histórias Escolares</h1>
+    </header>
 
     <div class="historia">
         <h2>Um dia mau</h2>
@@ -58,7 +98,7 @@
     </div>
 
     <div class="historia">
-        <h2>História 2</h2>
+        <h2>Biblioteca Misteriosa</h2>
         <p>
             Era uma vez, na pequena vila de São João da Serra, uma escola centenária chamada Escola Primária Rainha Dona Leonor.
         </p>
@@ -78,7 +118,7 @@ A partir desse dia, a biblioteca da escola tornou-se um lugar ainda mais especia
     </div>
 
     <div class="historia">
-        <h2>História 3</h2>
+        <h2>Escola Primária</h2>
         <p>
             Na Escola Primária, algo extraordinário estava prestes a acontecer. Os alunos, liderados pela professora Carla, decidiram realizar um projeto especial para melhorar a comunidade local.
         </p>
@@ -96,11 +136,39 @@ A partir desse dia, a biblioteca da escola tornou-se um lugar ainda mais especia
                 
                 À medida que o espaço de recreio ganhava vida com as cores, risos e novas estruturas de jogo, a comunidade percebeu o poder da colaboração e do espírito coletivo. A Escola Primária tornou-se um exemplo inspirador de como a educação não se limita apenas à sala de aula, mas pode impactar positivamente toda uma comunidade.
                 
-                No final, a inauguração do novo espaço de recreio foi um evento emocionante. As crianças, os pais, os professores e os membros da comunidade se reuniram para celebrar o sucesso do projeto. A Escola Primária continuou a ser um farol de inspiração, lembrando a todos que, com criatividade e trabalho em equipe, é possível transformar sonhos em realidade.
+                No final, a inauguração do novo espaço de recreio foi um evento emocionante. As crianças, os pais, os professores e os membros da comunidade se reuniram para celebrar o sucesso do projeto. A Escola Primária continuou a ser um farol de inspiração, lembrando a todos que, com criatividade e trabalho em equipe, é possível transformar sonhos em realidade.                
             </p>
         </div>
         <p class="ler-mais" onclick="mostrarConteudo(this)">Ler Mais</p>
     </div>
+        <div>
+            <form>
+                <h2>Entre em Contato</h2>
+                <input type="text" placeholder="Seu Nome">
+                <input type="email" placeholder="Seu E-mail">
+                <textarea placeholder="Mensagem"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+    </main>
+
+    <footer>
+        &copy; 2024 Histórias Escolares
+    </footer>
+
+    <script>
+        // Adicionando um botão de rolar suave
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 
     <script>
         function mostrarConteudo(elemento) {

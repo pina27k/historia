@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórias Escolares</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        main {
+            margin: 20px;
+        }
+
+        h1 {
+            color: #007bff;
+            text-align: center;
+        }
+
+        .historia {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #007bff;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        form {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        input, textarea, button {
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Histórias Escolares</h1>
+    </header>
+
+    <nav>
+        <a href="#">Link do Menu</a>
+        <!-- Adicione mais links conforme necessário -->
+    </nav>
+
+    <main>
+
+        <div class="historia">
+            <h2>História 1</h2>
+            <p>
+                Escreva aqui a primeira história escolar.
+            </p>
+        </div>
+
+        <div class="historia">
+            <h2>História 2</h2>
+            <p>
+                Escreva aqui a segunda história escolar.
+            </p>
+        </div>
+
+        <div class="historia">
+            <h2>Escola Primária</h2>
+            <p>
+                Na Escola Primária, algo extraordinário estava prestes a acontecer. Os alunos, liderados pela professora Carla, decidiram realizar um projeto especial para melhorar a comunidade local.
+
+                Tudo começou quando as crianças perceberam que a área de recreio da escola estava bastante desgastada. Empolgados com a ideia de tornar o espaço mais acolhedor e divertido, os alunos se uniram para planejar e executar um projeto de revitalização.
+                
+                A professora Carla incentivou a criatividade e a participação ativa de cada estudante. Eles realizaram pesquisas sobre design de parques infantis, fizeram orçamentos e elaboraram propostas. A comunidade local também se envolveu, contribuindo com materiais e oferecendo apoio voluntário.
+                
+                Durante as tardes, os alunos se reuniam para pintar, plantar flores e criar novas áreas de jogo. Cada estudante tinha uma tarefa específica, desde a pintura de murais vibrantes até a construção de novos brinquedos com materiais reciclados.
+                
+                O entusiasmo dos alunos atraiu a atenção da mídia local, que cobriu a história da Escola Primária da e seu projeto de revitalização. Isso gerou ainda mais apoio da comunidade, com empresas locais doando recursos adicionais para o projeto.
+                
+                À medida que o espaço de recreio ganhava vida com as cores, risos e novas estruturas de jogo, a comunidade percebeu o poder da colaboração e do espírito coletivo. A Escola Primária tornou-se um exemplo inspirador de como a educação não se limita apenas à sala de aula, mas pode impactar positivamente toda uma comunidade.
+                
+                No final, a inauguração do novo espaço de recreio foi um evento emocionante. As crianças, os pais, os professores e os membros da comunidade se reuniram para celebrar o sucesso do projeto. A Escola Primária continuou a ser um farol de inspiração, lembrando a todos que, com criatividade e trabalho em equipe, é possível transformar sonhos em realidade.                
+            </p>
+        </div>
+
+        <form>
+            <h2>Entre em Contato</h2>
+            <input type="text" placeholder="Seu Nome">
+            <input type="email" placeholder="Seu E-mail">
+            <textarea placeholder="Mensagem"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+
+    </main>
+
+    <footer>
+        &copy; 2024 Histórias Escolares
+    </footer>
+
+    <script>
+        // Adicionando um botão de rolar suave
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
