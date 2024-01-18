@@ -7,9 +7,10 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
+            margin: 20px;
+        }
+
+        h1, h2 {
             color: #333;
         }
 
@@ -169,6 +170,19 @@
                 });
             });
         });
+    </script>
+
+    <script>
+        function mostrarConteudo(elemento) {
+            const conteudoExtra = elemento.parentElement.querySelector('.conteudo-extra');
+            if (conteudoExtra.style.display === 'none') {
+                conteudoExtra.style.display = 'block';
+                elemento.textContent = 'Ler Menos';
+            } else {
+                conteudoExtra.style.display = 'none';
+                elemento.textContent = 'Ler Mais';
+            }
+        }
     </script>
 
 </body>
